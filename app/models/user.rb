@@ -1,8 +1,8 @@
 class User < ApplicationRecord
     has_many :favorites_lists
     has_many :wish_lists
-    has_many :resorts, through :favorites_lists
-    has_many :visited_resorts, through :wish_lists
+    has_many :resorts, through: :favorites_lists
+    has_many :visited_resorts, through: :wish_lists
 
     # def self.get_request(id)
     # api = ENV["Snow_API_Key"]
