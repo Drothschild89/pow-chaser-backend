@@ -9,6 +9,7 @@ class User < ApplicationRecord
     # url = "http://api.powderlin.es/station/#{id}?days=30"
     # JSON.parse(RestClient.get(url))
     # end
+    # TEST
 
     def self.get_request
         api = ENV["Snow_API_Key"]
